@@ -6,8 +6,7 @@ def dijkstra(self, edges:List[List[int]], target:int, source:int):
         adj[u].append([v,w])
 
     # piton heap is list, then use heapq.heap...
-    pq = []
-    heapq.heappush(pq, [0, source]) #source is starting position
+    pq = [[0, source]] #source is starting position
 
     dist = {}
     
